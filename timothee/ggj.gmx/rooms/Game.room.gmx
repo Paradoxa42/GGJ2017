@@ -11,9 +11,10 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>audio_play_sound(snd_fond, 1, true);
+random_set_seed(current_time);
+randomize();
 global.speed = 1;
 global.time = 0;
-show_debug_message("difficulté" + string(global.diff));
 //detect gamepad
 global.gp = 0;
 nb_gamepad = 0;
