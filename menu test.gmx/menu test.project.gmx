@@ -18,8 +18,6 @@
     <background>background\Background</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_start</object>
     <object>objects\obj_option</object>
