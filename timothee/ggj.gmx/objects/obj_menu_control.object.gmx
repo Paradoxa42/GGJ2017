@@ -145,7 +145,10 @@ else if global.quit = true {game_end()}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.start = true {room_goto(Game)}
+            <string>if global.start = true {
+global.diff = 0;
+room_goto(Game)
+}
 else if global.options = true {room_goto(rm_options)}
 else if global.quit = true {game_end()}
 </string>

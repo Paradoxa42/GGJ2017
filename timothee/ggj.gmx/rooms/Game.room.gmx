@@ -13,6 +13,7 @@
   <code>audio_play_sound(snd_fond, 1, true);
 global.speed = 1;
 global.time = 0;
+show_debug_message("difficulté" + string(global.diff));
 //detect gamepad
 global.gp = 0;
 nb_gamepad = 0;

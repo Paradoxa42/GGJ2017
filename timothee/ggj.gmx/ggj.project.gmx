@@ -42,6 +42,8 @@
       <object>objects\obj_good</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_bonus</object>
+      <object>objects\obj_wallH</object>
+      <object>objects\obj_wallV</object>
     </objects>
     <object>objects\game_manager</object>
     <objects name="menu">

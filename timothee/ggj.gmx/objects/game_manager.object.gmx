@@ -49,12 +49,19 @@
           <argument>
             <kind>1</kind>
             <string>global.time += 1;
-
 if (global.time % 30 == 0) {
     instance_create(room_width, random(room_height), obj_wall);
     instance_create(room_width, random(room_height), obj_bonus);
 }
-
+if (global.diff == 1)
+{
+    if (global.time % 150 == 0) {
+        if (random(1) % 2)
+            instance_create(room_width, random(room_height), obj_wallH);
+        else
+            instance_create(room_width, random(room_height), obj_wallV);
+    }
+}
 </string>
           </argument>
         </arguments>

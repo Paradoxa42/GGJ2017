@@ -122,6 +122,7 @@ image_speed = 0
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(snd_button, 2, false);
+global.diff = 0;
 room_goto(Game)
 </string>
           </argument>
