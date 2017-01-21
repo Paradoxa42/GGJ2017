@@ -33,6 +33,8 @@
   <backgrounds name="background">
     <background>background\bg_main</background>
     <background>background\Background</background>
+    <background>background\bg_splash</background>
+    <background>background\bg_gamover</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -57,11 +59,15 @@
       <object>objects\obj_start</object>
       <object>objects\room_goto_menu_</object>
     </objects>
+    <object>objects\obj_splash</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_splashscreen</room>
     <room>rooms\menu</room>
     <room>rooms\Game</room>
     <room>rooms\rm_options</room>
+    <room>rooms\rm_credits</room>
+    <room>rooms\rm_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
