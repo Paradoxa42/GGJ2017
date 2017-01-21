@@ -29,6 +29,8 @@
       <sprite>sprites\spr_btt_options_0</sprite>
       <sprite>sprites\spr_btt_play_0</sprite>
     </sprites>
+    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\sprite5</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main</background>
@@ -58,6 +60,8 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_start</object>
       <object>objects\room_goto_menu_</object>
+      <object>objects\obj_how_to</object>
+      <object>objects\obj_title</object>
     </objects>
     <object>objects\obj_splash</object>
   </objects>
