@@ -107,8 +107,8 @@ global.hard = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.easy = true {room_goto(menu)}
-else if global.hard = true {room_goto(menu)}
+            <string>if global.easy = true {global.diff = 0;room_goto(menu)}
+else if global.hard = true {global.diff = 1;room_goto(menu)}
 else if global.back = true {room_goto(menu)}
 </string>
           </argument>
@@ -132,8 +132,8 @@ else if global.back = true {room_goto(menu)}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.easy = true {room_goto(menu)}
-else if global.hard = true {room_goto(menu)}
+            <string>if global.easy = true {global.diff = 0;room_goto(Game)}
+else if global.hard = true {global.diff = 1;room_goto(Game)}
 else if global.back = true {room_goto(menu)}
 </string>
           </argument>
