@@ -52,6 +52,7 @@
 
 if (global.time % 30 == 0) {
     instance_create(room_width, random(room_height), obj_wall);
+    instance_create(room_width, random(room_height), obj_bonus);
 }
 
 </string>

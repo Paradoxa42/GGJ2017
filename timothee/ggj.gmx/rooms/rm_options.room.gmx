@@ -10,36 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.speed = 1;
-global.time = 0;
-//detect gamepad
-global.gp = 0;
-nb_gamepad = 0;
-while (global.gp &lt; gamepad_get_device_count())
-{
-    if (gamepad_is_connected(global.gp))
-        {
-            nb_gamepad += 1;
-            inst = instance_create(128, 256, obj_main);
-            with(inst)
-            {
-                port = global.gp;
-                color = make_colour_hsv(random(255), 255, 255);
-                image_blend = color;
-            }
-        }
-        global.gp += 1;
-}
-if (nb_gamepad == 0)
-{
-    inst = instance_create(128, 256, obj_main);
-    with(inst)
-    {
-        port = global.gp;
-        color = make_colour_hsv(200, 255, 255);
-        image_blend = color;
-    }
-}</code>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -60,7 +31,7 @@ if (nb_gamepad == 0)
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_main" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="Background" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -80,7 +51,10 @@ if (nb_gamepad == 0)
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="game_manager" x="288" y="96" name="inst_2E19BF88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_opt_easy" x="384" y="256" name="inst_DB99A495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_opt_hard" x="384" y="416" name="inst_5D17BE05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="room_goto_menu_" x="224" y="64" name="inst_304FA407" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_opt_back" x="384" y="576" name="inst_C0AB5834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
