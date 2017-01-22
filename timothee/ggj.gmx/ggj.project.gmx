@@ -37,8 +37,12 @@
     <background>background\Background</background>
     <background>background\bg_splash</background>
     <background>background\bg_gamover</background>
+    <background>background\bg_credits</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_main</object>
     <objects name="PNJ">
@@ -64,6 +68,7 @@
       <object>objects\obj_title</object>
     </objects>
     <object>objects\obj_splash</object>
+    <object>objects\obj_credits_roll</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>
